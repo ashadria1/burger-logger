@@ -4,13 +4,8 @@ setup the code to connect Node to MySQL
 
 * Export the connection.. 
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: '',
-  database: 'burgers_db',
-});
+const mysql = require('mysql');
+
 let connection;
 
 if (process.env.JAWSDB_URL) {
@@ -18,6 +13,13 @@ if (process.env.JAWSDB_URL) {
 } else {
   connection = mysql.createConnection('mysql://root@localhost:3306/burgers_db');
 }
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('connected to db!');
+});
+
+module.exports = connection;
 
 
 */
