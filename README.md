@@ -1,10 +1,10 @@
-# burger-logger
+# burger-logger-logger
 
 # Node Express Handlebars
 
 ### Overview
 
-In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+In this assignment, you'll create a burger-logger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
 ### Read This
 
@@ -16,13 +16,13 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 ### Before You Begin
 
-* Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+* Eat-Da-burger-logger! is a restaurant app that lets users input the names of burger-loggers they'd like to eat.
 
-* Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+* Whenever a user submits a burger-logger's name, your app will display the burger-logger on the left side of the page -- waiting to be devoured.
 
-* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+* Each burger-logger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger-logger will move to the right side of the page.
 
-* Your app will store every burger in a database, whether devoured or not.
+* Your app will store every burger-logger in a database, whether devoured or not.
 
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
@@ -50,7 +50,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+1. Create a GitHub repo called `burger-logger` and clone it to your computer.
 
 2. Make a package.json file by running `npm init` from the command line.
 
@@ -67,18 +67,18 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+1. Inside your `burger-logger` directory, create a folder named `db`.
 
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
 
-   * Create the `burgers_db`.
-   * Switch to or use the `burgers_db`.
-   * Create a `burgers` table with these fields:
+   * Create the `burger-loggers_db`.
+   * Switch to or use the `burger-loggers_db`.
+   * Create a `burger-loggers` table with these fields:
      * **id**: an auto incrementing int that serves as the primary key.
-     * **burger_name**: a string.
+     * **burger-logger_name**: a string.
      * **devoured**: a boolean.
 
-3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
+3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burger-loggers` table with at least three entries.
 
 4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
 
@@ -96,7 +96,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside your `burger-logger` directory, create a folder named `config`.
 
 2. Create a `connection.js` file inside `config` directory.
 
@@ -118,32 +118,32 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Model setup
 
-* Inside your `burger` directory, create a folder named `models`.
+* Inside your `burger-logger` directory, create a folder named `models`.
 
-  * In `models`, make a `burger.js` file.
+  * In `models`, make a `burger-logger.js` file.
 
-    * Inside `burger.js`, import `orm.js` into `burger.js`
+    * Inside `burger-logger.js`, import `orm.js` into `burger-logger.js`
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    * Also inside `burger-logger.js`, create the code that will call the ORM functions using burger-logger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `burger-logger.js` file.
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `burger-logger` directory, create a folder named `controllers`.
 
-2. In `controllers`, create the `burgers_controller.js` file.
+2. In `controllers`, create the `burger-loggers_controller.js` file.
 
-3. Inside the `burgers_controller.js` file, import the following:
+3. Inside the `burger-loggers_controller.js` file, import the following:
 
    * Express
-   * `burger.js`
+   * `burger-logger.js`
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside your `burger-logger` directory, create a folder named `views`.
 
    * Create the `index.handlebars` file inside `views` directory.
 
@@ -168,14 +168,14 @@ All the recommended files and directories from the steps above should look like 
 │   └── orm.js
 │ 
 ├── controllers
-│   └── burgers_controller.js
+│   └── burger-loggers_controller.js
 │
 ├── db
 │   ├── schema.sql
 │   └── seeds.sql
 │
 ├── models
-│   └── burger.js
+│   └── burger-logger.js
 │ 
 ├── node_modules
 │ 
@@ -184,9 +184,9 @@ All the recommended files and directories from the steps above should look like 
 ├── public
 │   └── assets
 │       ├── css
-│       │   └── burger_style.css
+│       │   └── burger-logger_style.css
 │       └── img
-│           └── burger.png
+│           └── burger-logger.png
 │   
 │
 ├── server.js
