@@ -10,6 +10,16 @@ In this application, I have created a burger logger with MySQL, Node, Express, H
 
 When trying to connect remotely to your Heroku database on an open network such as a coffee shop, library, or even your University WiFi, it will be blocked. If you are experiencing a Heroku connection error, this could be why.
 
+
+Installation
+Clone the repo to your local machine.
+npm install
+Update `connection.js` to your local mysql database.
+Run schema.sql and seed.sql in mysqlworkbench or mysql cli.
+Usage
+npm start
+Open localhost:8080 in your favorite browser.
+
 ### Important
 
 * **This assignment must be deployed.** Be sure to utilize the [MYSQL Heroku Deployment Guide](../../04-Important/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment.
