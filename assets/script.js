@@ -22,7 +22,7 @@ burgerForm.addEventListener('submit', (e) => {
     });
 });
 
-// Display uneaten list.
+// Display uneaten list...
 
 uneatenList.addEventListener('click', (e) => {
   if (e.target.matches('button')) {

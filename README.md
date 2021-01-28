@@ -20,7 +20,7 @@ Install the Handlebars npm package: `npm install express-handlebars`.
 Install MySQL npm package: `npm install mysql`.
 Update `connection.js` to your local mysql database.
 Run schema.sql and seed.sql in mysqlworkbench or mysql cli.
-
+npm install express express-handlebars mysql 
 
 Usage
 npm start

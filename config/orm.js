@@ -11,7 +11,7 @@
 
 const connection = require('./connection');
 
-// Select all...
+// Select all burgers...
 
 function selectAll(table) {
   return new Promise((resolve, reject) => {
@@ -25,7 +25,7 @@ function selectAll(table) {
   });
 }
 
-// Insert one...
+// Insert one burger...
 
 function insertOne(table, values) {
   return new Promise((resolve, reject) => {
@@ -39,7 +39,7 @@ function insertOne(table, values) {
   });
 }
 
-// Update one...
+// Update one burger...
 
 function updateOne(table, values, id) {
   return new Promise((resolve, reject) => {
