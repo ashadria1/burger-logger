@@ -1,13 +1,16 @@
 {{!-- * Setup the `index.handlebars` to have the template that Handlebars can render onto. --}}
 
-<h1 class="text-center">Welcome to Eat da Burger!</h1>
+<h1 class="text-center">Eat-Da-Burger!</h1>
 
 {{!-- Draw a burger! --}}
 <div class="burger-tray">
   <div class="burger">
     <div class="burger-top-bun"></div>
     <div class="lettuce"></div>
+    <div class="cheese"></div>
     <div class="tomato"></div>
+    <div class="patty"></div>
+    <div class="lettuce"></div>
     <div class="cheese"></div>
     <div class="patty"></div>
     <div class="burger-bottom-bun"></div>
@@ -19,7 +22,7 @@
 <div class="container">
   <div class="burgers text-center">
     <div class="w-50">
-      <h2>Burger Orders</h2>
+      <h2>Uneaten Burgers:</h2>
       <ul id="uneaten-list">
         {{#each burgers}}
           {{#unless devoured}}
@@ -28,9 +31,9 @@
         {{/each}}
       </ul>
     </div>
-    
+
     <div class="w-50">
-      <h2>Devoured Burgers</h2>
+      <h2>Devoured Burgers:</h2>
       <ul id="eaten-list">
         {{#each burgers}}
           {{#if devoured}}
@@ -46,10 +49,11 @@
 
 <form class="text-center" id="burgerForm">
   <div>
-    <label for="burgerInput">Burger Name:</label>
-    <input type="text" id="burgerInput" name="burgerName">
+    <input type="text-align: center" id="burgerInput" name="burgerName">
     <button type="submit">Submit</button>
-  </div>
+    <br>
+    <label for="burgerInput">Enter a new burger you want to eat, and click the Submit button.</label>
+    </div>
 </form>
 
 

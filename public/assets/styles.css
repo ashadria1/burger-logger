@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: #F57A35;
+}
+
+body {
+  background-color: #FFC866;
+}
+
 html {
   font-family: 'Segoe UI', 'Open Sans','Helvetica Neue', sans-serif;
 }
@@ -10,6 +18,15 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.button {
+  background-color: #246398;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .container {

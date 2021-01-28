@@ -18,7 +18,7 @@ VALUES ('Krusty Burger', FALSE),
 ('In-N-Out Burger', FALSE),
 ('McDonalds Big Mac', FALSE),
 ('White Castle Slider', FALSE),
-('Krytsal with Cheese', FALSE),
+('Krystal with Cheese', FALSE),
 ('Royale with Cheese', FALSE),
 ('Fuddruckers 1/2 lb with Cheese', FALSE),
 ('Five Guys Little Bacon Cheeseburger', FALSE); 
