@@ -1,6 +1,8 @@
 const burgerForm = document.querySelector('#burgerForm');
 const uneatenList = document.querySelector('#uneaten-list');
 
+// Show submit form to add new burgers...
+
 burgerForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const burgerInput = burgerForm.querySelector('#burgerInput');
@@ -19,6 +21,8 @@ burgerForm.addEventListener('submit', (e) => {
       location.href = '/';
     });
 });
+
+// Display uneaten list.
 
 uneatenList.addEventListener('click', (e) => {
   if (e.target.matches('button')) {

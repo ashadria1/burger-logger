@@ -11,9 +11,11 @@
 
 const connection = require('./connection');
 
+// Select all...
+
 function selectAll(table) {
   return new Promise((resolve, reject) => {
-    connection.query('select * from ??', table, (err, data) => {
+    connection.query('SELECT * FROM ??', table, (err, data) => {
       if (err) {
         reject(err);
       } else {
@@ -23,9 +25,11 @@ function selectAll(table) {
   });
 }
 
+// Insert one...
+
 function insertOne(table, values) {
   return new Promise((resolve, reject) => {
-    connection.query('insert into ?? set ?', [table, values], (err, result) => {
+    connection.query('INSERT INTO ?? SET ?', [table, values], (err, result) => {
       if (err) {
         reject(err);
       } else {
@@ -35,9 +39,11 @@ function insertOne(table, values) {
   });
 }
 
+// Update one...
+
 function updateOne(table, values, id) {
   return new Promise((resolve, reject) => {
-    connection.query('update ?? set ? where id = ?', [table, values, id], (err, result) => {
+    connection.query('UPDATE ?? SET ? WHERE id = ?', [table, values, id], (err, result) => {
       if (err) {
         reject(err);
       } else {
@@ -46,6 +52,8 @@ function updateOne(table, values, id) {
     });
   });
 }
+
+// Export the ORM object in `module.exports`...
 
 module.exports = {
   selectAll,
