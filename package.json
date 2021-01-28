@@ -1,10 +1,11 @@
 {
   "name": "burger-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this application, I have created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).  I have endeavored to follow the MVC design pattern, using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

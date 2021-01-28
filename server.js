@@ -1,8 +1,6 @@
-const express = require("express");
-
-/* const express = require('express');
+const express = require('express');
 const exphbs = require('express-handlebars');
-const burgerRouter = require('./controllers/burgers_controller');
+const burgerRouter = require('./controllers/burger-loggers_controller');
 
 const PORT = process.env.PORT || 8080;
 
@@ -20,4 +18,4 @@ app.use(burgerRouter);
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
-}); */
+});

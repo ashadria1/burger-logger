@@ -13,9 +13,15 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 Installation
 Clone the repo to your local machine.
+npm init -y
 npm install
+Install the Express npm package: `npm install express`.
+Install the Handlebars npm package: `npm install express-handlebars`.
+Install MySQL npm package: `npm install mysql`.
 Update `connection.js` to your local mysql database.
 Run schema.sql and seed.sql in mysqlworkbench or mysql cli.
+
+
 Usage
 npm start
 Open localhost:8080 in your favorite browser.

@@ -1,8 +1,5 @@
 /* * Inside `burger-logger.js`, import `orm.js` into `burger-logger.js` */
 
-const orm = require("./orm");
-
-/* 
 const orm = require('../config/orm');
 
 async function createBurger(burgerName) {
@@ -30,5 +27,3 @@ module.exports = {
   updateBurger,
   viewBurgers,
 };
-
- */

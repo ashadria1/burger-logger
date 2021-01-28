@@ -4,10 +4,10 @@
    * `burger-logger.js`
 
    Create the `router` for the app, and export the `router` at the end of your file.
-
+ */
 
 const express = require('express');
-const burger = require('../models/burger');
+const burger = require('../models/burger-logger');
 
 const router = express.Router();
 
@@ -29,6 +29,3 @@ router.put('/api/burgers/:id', async (req, res) => {
 });
 
 module.exports = router;
-
- */
-

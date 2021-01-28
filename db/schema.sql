@@ -1,20 +1,18 @@
-/* --    * Create the `burgers_db`.
---    * Switch to or use the `burgers_db`.
---    * Create a `burgers` table with these fields:
+--   * Create the `burgers_db`.
+--      * Switch to or use the `burgers_db`.
+--      * Create a `burgers` table with these fields:
 --      * **id**: an auto incrementing int that serves as the primary key.
 --      * **burger_name**: a string.
---      * **devoured**: a boolean.
+--      * **devoured**: a boolean.   
 
-drop database if exists burgers_db;
+DROP DATABASE IF EXISTS burgers_db;
 
-create database burgers_db;
+CREATE DATABASE burgers_db;
 
-use burgers_db;
+USE burgers_db;
 
-create table burgers (
-  id int auto_increment primary key,
-  burger_name varchar(100),
-  devoured boolean
-)
-
- */
+CREATE TABLE burgers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  burger_name VARCHAR(100),
+  devoured BOOLEAN
+);
