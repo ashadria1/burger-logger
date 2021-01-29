@@ -19,8 +19,8 @@ In this application, I have created a burger logger with MySQL, Node, Express, H
 ### Installation
 
 1. Clone the repo to your local machine, and open your command line interface.
-2. Install npm:  `npm init -y`.
-3. Make sure it;s installed:  `npm install`.
+2. Initialize npm:  `npm init -y`.
+3. Make sure it's installed:  `npm install`.
 4. Install the Express npm package: `npm install express`.
 5. Install the Handlebars npm package: `npm install express-handlebars`.
 6. Install MySQL npm package: `npm install mysql`.
