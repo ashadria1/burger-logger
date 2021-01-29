@@ -37,3 +37,5 @@ In this application, I have created a burger logger with MySQL, Node, Express, H
 
 * Github Repository link:  https://github.com/ashadria1/burger-logger
 
+![Burger-Logger Screenshot](/assets/Screenshot Burger-Logger.PNG/)
+
