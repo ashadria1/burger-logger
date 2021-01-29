@@ -26,7 +26,7 @@ In this application, I have created a burger logger with MySQL, Node, Express, H
 6. Install MySQL npm package: `npm install mysql`.
 (You can also chain npm packages like this:  `npm install express express-handlebars mysql`.)
 7. Update `connection.js` to your local mysql database and password.
-8. Run `schema.sql` and `seeds.sql` in mysql workbench or mysql cli to create and populate tables.
+8. Run `schema.sql` and `seeds.sql` in MySQL Workbench or MySQL CLI to create and populate tables.
 9. Start the app: `npm start`.
 10. Open localhost:8080 in your favorite browser.
 11. Devour burgers!
