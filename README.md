@@ -40,5 +40,5 @@ In this application, I have created a burger logger with MySQL, Node, Express, H
 ### Screenshot
 
 
-![Burger-Logger Screenshot](public\assets\Screenshot Burger-Logger.png?raw=true "Burger-Logger Screenshot")
+![Burger-Logger Screenshot](public/assets/Screenshot Burger-Logger.png?raw=true "Burger-Logger Screenshot")
 
